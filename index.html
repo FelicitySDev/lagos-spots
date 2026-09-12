@@ -3,27 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lagos Spots</title>
+    <meta
+      name="description"
+      content="Discover curated restaurants, study spots, nightlife, and events across Lagos."
+    />
+    <title>Lagos Spots — Discover Your Next Favorite Place</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1>Lagos Spots</h1>
-      <p>Find restaurants, hangouts, study spots, and events around Lagos.</p>
+      <a href="index.html" class="logo">Lagos Spots</a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Explore Spots</a></li>
+          <li><a href="submit.html">Add a Spot</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section id="filters">
-        <button data-category="food">Food</button>
-        <button data-category="study">Study</button>
-        <button data-category="nightlife">Nightlife</button>
-        <button data-category="events">Events</button>
+      <section id="search" aria-labelledby="search-heading">
+        <h2 id="search-heading">Find Places in Lagos</h2>
+        <div id="filters">
+          <button data-category="food" type="button">Food</button>
+          <button data-category="study" type="button">Study</button>
+          <button data-category="nightlife" type="button">Nightlife</button>
+          <button data-category="events" type="button">Events</button>
+        </div>
       </section>
 
-      <section id="spots-list">
-        <!-- Spot cards will be rendered here -->
+      <section id="spots-list" aria-labelledby="spots-heading">
+        <h2 id="spots-heading">Curated Spots</h2>
+
+        <article class="spot-card">
+          <img
+            src="assets/terra-kulture.svg"
+            alt="Exhibition gallery space at Terra Kulture in Victoria Island showing contemporary Nigerian artwork"
+          />
+          <h3>Terra Kulture</h3>
+          <ul class="tags">
+            <li>Art Gallery</li>
+            <li>Restaurant</li>
+            <li>Theatre</li>
+          </ul>
+          <p>
+            A renowned cultural center in Victoria Island featuring Nigerian
+            cuisine, rotating art exhibitions, and theatrical stage plays.
+          </p>
+          <a
+            href="https://www.google.com/maps/search/Terra+Kulture+Victoria+Island"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View on Map</a
+          >
+        </article>
+
+        <article class="spot-card">
+          <img
+            src="assets/bogobiri-house.svg"
+            alt="Colorful courtyard seating area at Bogobiri House boutique hotel in Ikoyi"
+          />
+          <h3>Bogobiri House</h3>
+          <ul class="tags">
+            <li>Hotel</li>
+            <li>Art Gallery</li>
+            <li>Live Music</li>
+          </ul>
+          <p>
+            A vibrant boutique hotel, African art gallery, and live music hub
+            tucked into a quiet street in Ikoyi.
+          </p>
+          <a
+            href="https://www.google.com/maps/search/Bogobiri+House+Ikoyi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View on Map</a
+          >
+        </article>
+
+        <article class="spot-card">
+          <img
+            src="assets/ccx-lounge.svg"
+            alt="Dimly lit lounge seating and bar area at CCX Lounge in Victoria Island"
+          />
+          <h3>CCX Lounge</h3>
+          <ul class="tags">
+            <li>Nightlife</li>
+            <li>Lounge</li>
+            <li>Cocktails</li>
+          </ul>
+          <p>
+            A stylish nightlife spot in Victoria Island known for its
+            cocktail menu, DJ sets, and late-night crowd.
+          </p>
+          <a
+            href="https://www.google.com/maps/search/CCX+Lounge+Victoria+Island"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View on Map</a
+          >
+        </article>
+
+        <article class="spot-card">
+          <img
+            src="assets/unilag-library.svg"
+            alt="Rows of quiet study desks inside the University of Lagos main library in Yaba"
+          />
+          <h3>University of Lagos Library</h3>
+          <ul class="tags">
+            <li>Study</li>
+            <li>Wifi</li>
+            <li>Quiet</li>
+          </ul>
+          <p>
+            A spacious, quiet study environment in Yaba with reliable wifi and
+            long opening hours — a favorite for students and remote workers.
+          </p>
+          <a
+            href="https://www.google.com/maps/search/University+of+Lagos+Library+Yaba"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View on Map</a
+          >
+        </article>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2026 Lagos Spots. Built for the community.</p>
+    </footer>
 
     <script src="app.js"></script>
   </body>
